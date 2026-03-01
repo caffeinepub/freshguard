@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping each FreshGuard landing page feature (hero, company info, how it works, features showcase, etc.) to their implementing source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON map of frontend source file paths to one-sentence descriptions of each file's purpose in the FreshGuard pitch page.",
+  "frontend/index.css": "Global Tailwind CSS entry point defining OKLCH-based CSS custom property tokens for light and dark color themes including backgrounds, borders, charts, and sidebar colors.",
+  "frontend/index.html": "HTML shell for the FreshGuard React app, mounting the root div and loading the main TypeScript entry point as a module.",
+  "frontend/src/App.tsx": "Root React component that composes all FreshGuard landing page sections in order: Hero, CompanyInfo, HowItWorks, FeaturesShowcase, TargetMarket, SharkTankFinancials, AppDemo, and Footer.",
+  "frontend/src/components/AppDemo.tsx": "Interactive app demo section rendering a phone mockup with three tabs—food inventory with expiration status, alerts panel, and recipe suggestions—using scroll-triggered entrance animation.",
+  "frontend/src/components/CompanyInfo.tsx": "Company info section displaying FreshGuard Inc.'s mission statement in a styled quote card and three team member cards for CEO Jordan Ellis, CTO Maya Chen, and COO Marcus Webb.",
+  "frontend/src/components/FeaturesShowcase.tsx": "Product features showcase rendering five device features (carbon filter, ethylene sensor, barcode scanner, Bluetooth, auto-mist) as gradient cards with hover animations, plus a product device image card.",
+  "frontend/src/components/Footer.tsx": "Site footer displaying FreshGuard branding, team credits, copyright year, and a caffeine.ai attribution link with dynamic UTM tracking.",
+  "frontend/src/components/Hero.tsx": "Hero section component for the FreshGuard landing page, displaying the product logo, tagline, key stats, and CTA buttons with scroll-triggered fade-in animation.",
+  "frontend/src/components/HowItWorks.tsx": "Section component that displays FreshGuard's 4-step process (odor absorption, spoilage detection, expiry scanning, alerts/misting) as animated cards with staggered scroll-in effects.",
+  "frontend/src/components/SharkTankFinancials.tsx": "Shark Tank pitch section displaying FreshGuard's investment ask ($500K for 15% equity), unit economics, revenue projections, and monthly expenses on a dark-themed layout.",
+  "frontend/src/components/TargetMarket.tsx": "Section component showcasing FreshGuard's target demographics and unique value proposition, with animated demographic cards and a gradient UVP banner.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and returns an ICP backend actor using the current Internet Identity, invalidating dependent queries whenever the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing login/logout state via DFINITY's AuthClient and exposing identity, status flags, and login/clear functions.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom hook that uses IntersectionObserver to set a visibility flag when a referenced element scrolls into view, triggering CSS animations.",
+  "frontend/src/index.css": "Global CSS file that imports Inter font, sets up Tailwind directives, and defines FreshGuard brand CSS custom properties (OKLCH color tokens) for both light and dark themes, plus custom animation keyframes.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider (React Query) and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with FreshGuard brand colors, OKLCH CSS variable mappings, custom gradients, shadows, border radii, and animation keyframes for accordion and scroll effects.",
+  "project_state.json": "Project state metadata file describing FreshGuard as a Shark Tank pitch web app with a landing page and interactive demo mockup, including architectural notes, image requirements, and a list of implemented features."
+}

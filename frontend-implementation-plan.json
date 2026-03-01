@@ -1,0 +1,273 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "FreshGuard Shark Tank Pitch & App Demo",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create hero section with FreshGuard branding, logo, slogan, and CTA button using green color scheme",
+      "acceptanceCriteria": [
+        "Hero section is prominently displayed at the top of the page",
+        "FreshGuard logo incorporates a leaf and fridge icon motif",
+        "Slogan text is clearly visible",
+        "Color scheme uses #2ECC71 and #27AE60 greens with white and dark accents"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add Hero component import and render it at the top of the main app layout"
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero section component with logo (using generated image frontend/public/assets/generated/freshguard-logo.dim_400x200.png), slogan 'Stay Fresh. Stay Smart. Waste Nothing.', call-to-action button, and background image (using generated image frontend/public/assets/generated/hero-bg.dim_1920x1080.png). Apply primary green colors #2ECC71 and #27AE60 with white text and dark accents. Ensure the component is responsive and visually prominent."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add company info and mission section with team member profiles",
+      "acceptanceCriteria": [
+        "Mission statement is displayed verbatim",
+        "All three team members are listed with their titles and roles",
+        "Section is visually distinct and professional"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add CompanyInfo component import and render it below the Hero section"
+        },
+        {
+          "path": "frontend/src/components/CompanyInfo.tsx",
+          "operation": "create",
+          "description": "Create CompanyInfo section component displaying company name 'FreshGuard Inc.', mission statement 'To eliminate food waste and promote healthier, smarter kitchens through innovative technology that keeps food fresh longer and keeps families informed.', and team members: CEO Jordan Ellis (Product Vision & Strategy), CTO Maya Chen (Hardware & Software Engineering), COO Marcus Webb (Operations & Manufacturing). Use card layout for team members with professional styling and appropriate spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add 'How It Works' section with 4 illustrated steps showing device features",
+      "acceptanceCriteria": [
+        "Exactly 4 steps are shown in sequence",
+        "Each step has a distinct emoji icon",
+        "Steps clearly describe the device features",
+        "Layout is visually clean and scannable"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add HowItWorks component import and render it below the CompanyInfo section"
+        },
+        {
+          "path": "frontend/src/components/HowItWorks.tsx",
+          "operation": "create",
+          "description": "Create HowItWorks section component with 4 sequential steps, each with a distinct emoji icon: (1) Active carbon filter absorbs food odors, (2) Ethylene gas sensor detects spoiling food, (3) Barcode scanner tracks expiration dates, (4) Bluetooth chip sends alerts to phone and auto-releases mist cleanser when bad smells are detected. Use a clean, scannable layout with numbered steps and generous spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add product features showcase section highlighting all 5 device features in card layout",
+      "acceptanceCriteria": [
+        "All 5 device features are displayed",
+        "Each feature has an emoji icon and short description",
+        "Layout uses cards or a grid"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add FeaturesShowcase component import and render it below the HowItWorks section"
+        },
+        {
+          "path": "frontend/src/components/FeaturesShowcase.tsx",
+          "operation": "create",
+          "description": "Create FeaturesShowcase section component displaying all 5 device features: Active carbon filter, Ethylene gas sensor, Barcode scanner for expiration dates, Bluetooth notifications, and Auto-mist cleanser. Each feature should have an emoji icon and short description. Use card-style layout or grid with hover effects. Include the product device image using generated image frontend/public/assets/generated/product-device.dim_600x600.png."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add target market section with demographics and unique value proposition",
+      "acceptanceCriteria": [
+        "Target market demographics are clearly stated",
+        "Unique value proposition is prominently highlighted",
+        "Section is visually differentiated from adjacent sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add TargetMarket component import and render it below the FeaturesShowcase section"
+        },
+        {
+          "path": "frontend/src/components/TargetMarket.tsx",
+          "operation": "create",
+          "description": "Create TargetMarket section component describing health-conscious families and busy professionals, ages 25–50, households spending $150+/month on groceries. Prominently highlight the unique value proposition: 'Only device that COMBINES odor absorption + gas detection + expiration tracking + auto-mist cleanse in one unit.' Use distinct styling to differentiate from adjacent sections, with emphasis on the UVP."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add Shark Tank-themed financials section with dramatic investor-card styling showing investment ask, expenses, and projections",
+      "acceptanceCriteria": [
+        "The investment ask ($500K for 15%) is prominently displayed in a dramatic hero-style card",
+        "All expense line items are listed with correct amounts",
+        "Revenue projections for Year 1 and Year 2 are shown",
+        "Section uses a visually dramatic style distinct from other sections (e.g., dark background, spotlight effect)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add SharkTankFinancials component import and render it below the TargetMarket section"
+        },
+        {
+          "path": "frontend/src/components/SharkTankFinancials.tsx",
+          "operation": "create",
+          "description": "Create SharkTankFinancials section component with dramatic, investor-card styling. Display: Asking $500,000 for 15% equity, Company Valuation $3.3 Million, COGS $18/unit, Retail Price $79.99/unit, Markup 344%, App free with Premium subscription $4.99/month. Monthly expenses breakdown: Factory/Warehouse $8,000, Utilities $1,200, Advertising/Marketing $5,000, Employee Salaries (5 employees) $25,000, Total $39,200/month. Current Sales $180,000 (first 6 months). Projections: $1.2M Year 1, $4.5M Year 2, Projected Annual Profit $420,000 Year 1. Use dramatic styling with dark background, spotlight effect, and prominent hero-style card for the investment ask. Include entrance animation trigger."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add interactive app demo section with mock phone screen showing food inventory, alerts, and recipe suggestions",
+      "acceptanceCriteria": [
+        "A phone frame mockup is rendered on the page",
+        "Food inventory shows at least 5 sample items with color-coded expiration status",
+        "Alerts panel shows example 3-day and 1-day warnings",
+        "Recipe suggestions section shows at least 2 sample recipes tied to expiring items",
+        "The demo UI looks like a real mobile app screen"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add AppDemo component import and render it below the SharkTankFinancials section"
+        },
+        {
+          "path": "frontend/src/components/AppDemo.tsx",
+          "operation": "create",
+          "description": "Create AppDemo section component with a phone frame mockup containing the FreshGuard app UI. Include: food inventory list with at least 5 sample items color-coded by expiration status (green = fresh, yellow = expiring soon, red = expired), alerts panel with example 3-day and 1-day warnings, and recipe suggestions section with at least 2 sample recipes tied to expiring items. Style the phone mockup to look like a real mobile app screen embedded within the pitch page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Implement smooth scroll animations, transitions, hover effects, and responsive layout across all screen sizes",
+      "acceptanceCriteria": [
+        "Sections animate into view on scroll",
+        "Cards have hover state transitions",
+        "Page is usable and well-laid-out on mobile viewports",
+        "No layout overflow or broken elements on small screens"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/hooks/useScrollAnimation.ts",
+          "operation": "create",
+          "description": "Create custom React hook for detecting when elements enter the viewport and triggering scroll animations. Use Intersection Observer API to track visibility and return animation state for components."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Ensure responsive layout for mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/components/CompanyInfo.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Ensure responsive layout for mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/components/HowItWorks.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Ensure responsive layout for mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/components/FeaturesShowcase.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Add hover effect transitions to feature cards. Ensure responsive grid layout for mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/components/TargetMarket.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Ensure responsive layout for mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/components/SharkTankFinancials.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply dramatic entrance animation with spotlight effect. Ensure responsive layout for mobile and desktop viewports with appropriate card stacking on small screens."
+        },
+        {
+          "path": "frontend/src/components/AppDemo.tsx",
+          "operation": "modify",
+          "description": "Add useScrollAnimation hook and apply entrance animation classes. Ensure phone mockup scales appropriately on mobile and desktop viewports."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add global CSS classes for scroll animations (fade-in, slide-up), hover transitions, and responsive utilities. Define keyframe animations for entrance effects and ensure smooth transitions throughout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Apply cohesive visual theme with green color scheme, typography, whitespace, and emoji icons throughout all sections",
+      "acceptanceCriteria": [
+        "Color palette is consistently applied across all sections",
+        "Typography is uniform and professional",
+        "Emoji icons appear in headings and feature cards throughout",
+        "Overall design feels cohesive and polished"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with FreshGuard brand colors: primary greens (#2ECC71, #27AE60), white backgrounds, dark charcoal accents. Configure custom spacing and typography for modern sans-serif font stack with generous whitespace."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Define global typography styles using modern sans-serif fonts with consistent sizing and line-height. Apply base color scheme (primary greens #2ECC71 and #27AE60, white backgrounds, dark charcoal accents) and ensure generous whitespace throughout. Add utility classes for emoji icon styling."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons. Ensure consistent use of brand greens, professional sans-serif typography, and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/CompanyInfo.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons. Ensure consistent use of brand greens, professional sans-serif typography, and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/HowItWorks.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons for each step. Ensure consistent use of brand greens, professional sans-serif typography, and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/FeaturesShowcase.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons for each feature. Ensure consistent use of brand greens, professional sans-serif typography, and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/TargetMarket.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons. Ensure consistent use of brand greens, professional sans-serif typography, and generous spacing."
+        },
+        {
+          "path": "frontend/src/components/SharkTankFinancials.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors with dramatic dark background and accent highlights. Ensure professional sans-serif typography and appropriate spacing for investor-facing content."
+        },
+        {
+          "path": "frontend/src/components/AppDemo.tsx",
+          "operation": "modify",
+          "description": "Apply cohesive theme colors, typography, and emoji icons within the phone mockup UI. Ensure consistent use of brand greens for status indicators and professional typography throughout the demo interface."
+        }
+      ]
+    }
+  ]
+}

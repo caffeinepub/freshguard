@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* FreshGuard Brand Colors (OKLCH) */
+    /* Brand green: #2ECC71 → oklch(0.74 0.19 152) */
+    /* Brand dark green: #27AE60 → oklch(0.65 0.17 152) */
+    /* Charcoal: #1A1A2E → oklch(0.18 0.02 265) */
+
+    --background: 0.99 0 0;
+    --foreground: 0.18 0.02 265;
+
+    --card: 0.99 0 0;
+    --card-foreground: 0.18 0.02 265;
+
+    --popover: 0.99 0 0;
+    --popover-foreground: 0.18 0.02 265;
+
+    --primary: 0.74 0.19 152;
+    --primary-foreground: 0.99 0 0;
+
+    --secondary: 0.65 0.17 152;
+    --secondary-foreground: 0.99 0 0;
+
+    --muted: 0.96 0.01 152;
+    --muted-foreground: 0.55 0.02 152;
+
+    --accent: 0.74 0.19 152;
+    --accent-foreground: 0.99 0 0;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.92 0.01 152;
+    --input: 0.92 0.01 152;
+    --ring: 0.74 0.19 152;
+
+    --chart-1: 0.74 0.19 152;
+    --chart-2: 0.65 0.17 152;
+    --chart-3: 0.55 0.15 152;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.99 0 0;
+    --sidebar-foreground: 0.18 0.02 265;
+    --sidebar-primary: 0.74 0.19 152;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.96 0.01 152;
+    --sidebar-accent-foreground: 0.18 0.02 265;
+    --sidebar-border: 0.92 0.01 152;
+    --sidebar-ring: 0.74 0.19 152;
+  }
+
+  .dark {
+    --background: 0.18 0.02 265;
+    --foreground: 0.99 0 0;
+    --card: 0.22 0.02 265;
+    --card-foreground: 0.99 0 0;
+    --popover: 0.25 0.02 265;
+    --popover-foreground: 0.99 0 0;
+    --primary: 0.74 0.19 152;
+    --primary-foreground: 0.18 0.02 265;
+    --secondary: 0.65 0.17 152;
+    --secondary-foreground: 0.99 0 0;
+    --muted: 0.25 0.02 265;
+    --muted-foreground: 0.65 0.02 265;
+    --accent: 0.74 0.19 152;
+    --accent-foreground: 0.18 0.02 265;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.18 0.02 265;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.74 0.19 152;
+    --sidebar: 0.22 0.02 265;
+    --sidebar-foreground: 0.99 0 0;
+    --sidebar-primary: 0.74 0.19 152;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.25 0.02 265;
+    --sidebar-accent-foreground: 0.99 0 0;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.74 0.19 152;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Scroll animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.7s ease forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.7s ease forwards;
+  }
+
+  .animate-scroll-dot {
+    animation: scrollDot 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scrollDot {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.3; }
+}

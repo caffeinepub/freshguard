@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Root application component that composes all FreshGuard pitch page sections in order: Hero, CompanyInfo, HowItWorks, FeaturesShowcase, TargetMarket, SharkTankFinancials, AppDemo, and Footer.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using IntersectionObserver to detect when elements enter the viewport and return a visibility state for triggering CSS entrance animations.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with FreshGuard logo (leaf + fridge emoji), slogan, CTA buttons linking to the pitch and demo sections, key stats bar, and animated scroll indicator.",
+  "frontend/src/components/CompanyInfo.tsx": "Company info section displaying FreshGuard Inc.'s mission statement in a styled quote card and team member cards for CEO Jordan Ellis, CTO Maya Chen, and COO Marcus Webb.",
+  "frontend/src/components/HowItWorks.tsx": "Four-step \"How It Works\" section with emoji icons covering the carbon filter, ethylene sensor, barcode scanner, and Bluetooth/auto-mist features in a responsive two-column card grid.",
+  "frontend/src/components/FeaturesShowcase.tsx": "Product features showcase displaying all 5 device features (carbon filter, ethylene sensor, barcode scanner, Bluetooth, auto-mist) in gradient cards with hover animations, plus the product device image.",
+  "frontend/src/components/TargetMarket.tsx": "Target market section with demographic cards for health-conscious families and busy professionals, plus a prominent green gradient UVP banner highlighting FreshGuard's unique all-in-one combination.",
+  "frontend/src/components/SharkTankFinancials.tsx": "Dramatic dark-themed Shark Tank financials section with a spotlight effect, featuring the $500K/15% equity ask card, unit economics, app revenue model, monthly expense breakdown, and revenue projections.",
+  "frontend/src/components/AppDemo.tsx": "Interactive app demo section with a realistic phone frame mockup showing three tabbed views: food inventory with color-coded expiration status, alerts panel with 3-day/1-day warnings, and recipe suggestions for expiring items.",
+  "frontend/src/components/Footer.tsx": "Site footer with FreshGuard branding, team credits, copyright year, and caffeine.ai attribution link with UTM tracking parameters.",
+  "frontend/src/index.css": "Global CSS with OKLCH color system tokens mapped to FreshGuard's green brand palette, Inter font import, scroll-behavior smooth, and keyframe animation definitions.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with FreshGuard brand colors (brand green, charcoal), Inter font family, hero gradient background, brand glow shadow, and custom animation keyframes."
+}
