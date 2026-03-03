@@ -1,15 +1,15 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const expenses = [
-  { label: 'Factory/Warehouse Rental', amount: '$8,000' },
-  { label: 'Utilities', amount: '$1,200' },
-  { label: 'Advertising & Marketing', amount: '$5,000' },
-  { label: 'Employee Salaries (5 employees)', amount: '$25,000' },
+  { label: 'Factory/Warehouse Rental', amount: '$6,500' },
+  { label: 'Utilities', amount: '$1,000' },
+  { label: 'Advertising & Marketing', amount: '$4,000' },
+  { label: 'Employee Salaries (4 employees)', amount: '$20,000' },
 ];
 
 const projections = [
-  { year: 'Year 1', revenue: '$1.2M', profit: '$420K', color: 'border-brand' },
-  { year: 'Year 2', revenue: '$4.5M', profit: 'Est. $1.6M', color: 'border-yellow-400' },
+  { year: 'Year 1', revenue: '$975K', profit: '$340K', color: 'border-brand' },
+  { year: 'Year 2', revenue: '$3.6M', profit: 'Est. $1.26M', color: 'border-yellow-400' },
 ];
 
 export default function SharkTankFinancials() {
@@ -49,11 +49,11 @@ export default function SharkTankFinancials() {
           <div className="relative z-10">
             <div className="text-5xl mb-4">💰</div>
             <p className="text-white/70 text-lg font-semibold uppercase tracking-widest mb-2">We Are Asking</p>
-            <div className="text-6xl md:text-7xl font-black mb-3">$500,000</div>
-            <div className="text-2xl font-bold text-white/90 mb-6">for <span className="text-yellow-300 text-3xl font-black">15%</span> equity</div>
+            <div className="text-6xl md:text-7xl font-black mb-3">$325,000</div>
+            <div className="text-2xl font-bold text-white/90 mb-6">for <span className="text-yellow-300 text-3xl font-black">12.5%</span> equity</div>
             <div className="inline-block px-6 py-3 bg-white/20 backdrop-blur rounded-2xl border border-white/30">
               <span className="text-white/70 text-sm font-semibold">Company Valuation: </span>
-              <span className="text-white font-black text-xl">$3.3 Million</span>
+              <span className="text-white font-black text-xl">$2.6 Million</span>
             </div>
           </div>
         </div>
@@ -68,8 +68,9 @@ export default function SharkTankFinancials() {
             <div className="space-y-4">
               {[
                 { label: 'Cost to Manufacture (COGS)', value: '$18 / unit', highlight: false },
-                { label: 'Retail Price', value: '$79.99 / unit', highlight: true },
-                { label: 'Markup', value: '344%', highlight: true },
+                { label: 'Retail Price', value: '$69.99 / unit', highlight: true },
+                { label: 'Gross Margin per Unit', value: '$51.99', highlight: true },
+                { label: 'Markup', value: '289%', highlight: true },
               ].map((item) => (
                 <div key={item.label} className="flex justify-between items-center py-3 border-b border-white/10 last:border-0">
                   <span className="text-gray-400 text-sm">{item.label}</span>
@@ -93,7 +94,11 @@ export default function SharkTankFinancials() {
               </div>
               <div className="flex justify-between items-center py-3 border-b border-white/10">
                 <span className="text-gray-400 text-sm">Premium Subscription</span>
-                <span className="font-black text-lg text-brand">$4.99 / month</span>
+                <span className="font-black text-lg text-brand">$3.99 / month</span>
+              </div>
+              <div className="flex justify-between items-center py-3 border-b border-white/10">
+                <span className="text-gray-400 text-sm">Target Conversion Rate</span>
+                <span className="font-black text-lg text-white">35%</span>
               </div>
               <div className="mt-4 p-4 bg-brand/10 rounded-2xl border border-brand/20">
                 <p className="text-gray-300 text-sm leading-relaxed">
@@ -118,7 +123,7 @@ export default function SharkTankFinancials() {
             ))}
             <div className="flex justify-between items-center pt-4 mt-2">
               <span className="text-white font-black text-lg">Total Monthly Expenses</span>
-              <span className="font-black text-2xl text-red-400">$39,200</span>
+              <span className="font-black text-2xl text-red-400">$31,500</span>
             </div>
           </div>
         </div>
@@ -128,7 +133,7 @@ export default function SharkTankFinancials() {
           <div className="bg-white/5 backdrop-blur rounded-3xl border border-yellow-400/30 p-6 text-center">
             <div className="text-3xl mb-2">📈</div>
             <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">Current Sales</p>
-            <p className="text-white font-black text-2xl">$180,000</p>
+            <p className="text-white font-black text-2xl">$142,000</p>
             <p className="text-gray-500 text-xs mt-1">First 6 months</p>
           </div>
           {projections.map((proj) => (

@@ -1,6 +1,11 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
-export default function Hero() {
+interface HeroProps {
+  onBuyFilter?: () => void;
+  onVote?: () => void;
+}
+
+export default function Hero({ onBuyFilter, onVote }: HeroProps) {
   const { ref, isVisible } = useScrollAnimation(0.1);
 
   const scrollToDemo = () => {
@@ -62,7 +67,7 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
           <button
             onClick={scrollToFinancials}
             className="px-8 py-4 bg-brand hover:bg-brand-dark text-white font-bold text-lg rounded-full shadow-brand-glow transition-all duration-300 hover:scale-105 hover:shadow-xl"
@@ -75,14 +80,30 @@ export default function Hero() {
           >
             📱 View App Demo
           </button>
+          {onBuyFilter && (
+            <button
+              onClick={onBuyFilter}
+              className="px-8 py-4 bg-charcoal hover:bg-charcoal-light text-white font-bold text-lg rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            >
+              🛒 Buy the Filter
+            </button>
+          )}
+          {onVote && (
+            <button
+              onClick={onVote}
+              className="px-8 py-4 bg-brand-dark hover:bg-brand text-white font-bold text-lg rounded-full shadow-brand-glow transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 border-brand"
+            >
+              🗳️ Vote on the Deal
+            </button>
+          )}
         </div>
 
         {/* Stats bar */}
         <div className="mt-16 grid grid-cols-3 gap-6 max-w-2xl mx-auto">
           {[
-            { value: '$3.3M', label: 'Valuation' },
-            { value: '344%', label: 'Markup' },
-            { value: '$1.2M', label: 'Year 1 Projection' },
+            { value: '$2.6M', label: 'Valuation' },
+            { value: '289%', label: 'Markup' },
+            { value: '$975K', label: 'Year 1 Projection' },
           ].map((stat) => (
             <div key={stat.label} className="bg-white/80 backdrop-blur rounded-2xl p-4 shadow-md border border-brand/20">
               <div className="text-2xl font-black text-brand">{stat.value}</div>

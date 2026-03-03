@@ -2,11 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-hero-section-at-the-top-of-the-landing-page-featuring-the-freshguard-logo-leaf-fridge-icon-design-the-slogan-stay-fresh-stay-smart-waste-nothing-and-a-call-to-action-button-use-the-green-color-scheme-2ecc71-27ae60-with-clean-whites-and-dark-accents",
-      "featureTitle": "Create a hero section at the top of the landing page featuring the FreshGuard logo (leaf + fridge icon design), the slogan 'Stay Fresh. Stay Smart. Waste Nothing.', and a call-to-action button. Use the green color scheme (#2ECC71, #27AE60) with clean whites and dark accents.",
+      "featureId": "feature-add-a-partners-section-on-the-home-page-landing-page-that-displays-freshguard-s-partnerships-with-frigidaire-whirlpool-and-kitchenaid-show-each-brand-name-prominently-and-logo-placeholder-if-available-styled-consistently-with-the-existing-freshguard-brand-design-place-this-section-between-existing-home-page-sections-in-a-logical-position-e-g-after-the-hero-or-features-section",
+      "featureTitle": "Add a 'Partners' section on the home page (landing page) that displays FreshGuard's partnerships with Frigidaire, Whirlpool, and KitchenAid. Show each brand name prominently (and logo placeholder if available), styled consistently with the existing FreshGuard brand design. Place this section between existing home page sections in a logical position (e.g., after the Hero or Features section).",
       "files": [
         "frontend/src/App.tsx",
-        "frontend/src/components/Hero.tsx"
+        "frontend/src/components/Partners.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -21,11 +21,11 @@
       "confidence": "high"
     },
     {
-      "featureId": "feature-add-a-company-info-and-mission-section-displaying-company-name-freshguard-inc-mission-statement-to-eliminate-food-waste-and-promote-healthier-smarter-kitchens-through-innovative-technology-that-keeps-food-fresh-longer-and-keeps-families-informed-and-team-members-ceo-jordan-ellis-product-vision-strategy-cto-maya-chen-hardware-software-engineering-coo-marcus-webb-operations-manufacturing",
-      "featureTitle": "Add a company info and mission section displaying: Company name 'FreshGuard Inc.', mission statement 'To eliminate food waste and promote healthier, smarter kitchens through innovative technology that keeps food fresh longer and keeps families informed.', and team members: CEO Jordan Ellis (Product Vision & Strategy), CTO Maya Chen (Hardware & Software Engineering), COO Marcus Webb (Operations & Manufacturing).",
+      "featureId": "feature-implement-an-openable-closeable-sidebar-navigation-drawer-that-slides-in-from-the-left-or-right-when-triggered-by-a-hamburger-menu-button-the-sidebar-must-list-navigation-links-to-every-page-and-section-business-plan-how-it-works-financials-the-pitch-and-sharks-vote-matching-the-screenshot-provided-clicking-a-link-should-navigate-to-or-scroll-to-the-corresponding-page-section-and-close-the-sidebar-the-trigger-button-must-be-persistently-visible-on-all-pages",
+      "featureTitle": "Implement an openable/closeable sidebar navigation drawer that slides in from the left (or right) when triggered by a hamburger/menu button. The sidebar must list navigation links to every page and section: Business Plan, How It Works, Financials, The Pitch, and Sharks Vote — matching the screenshot provided. Clicking a link should navigate to or scroll to the corresponding page/section and close the sidebar. The trigger button must be persistently visible on all pages.",
       "files": [
         "frontend/src/App.tsx",
-        "frontend/src/components/CompanyInfo.tsx"
+        "frontend/src/components/MenuButton.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -36,153 +36,6 @@
       ],
       "testIds": [
         "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-how-it-works-section-with-4-steps-illustrated-by-emoji-icons-covering-1-active-carbon-filter-absorbs-food-odors-2-ethylene-gas-sensor-detects-spoiling-food-3-barcode-scanner-tracks-expiration-dates-4-bluetooth-chip-sends-alerts-to-phone-and-auto-releases-mist-cleanser-when-bad-smells-are-detected",
-      "featureTitle": "Add a 'How It Works' section with 4 steps illustrated by emoji icons, covering: (1) Active carbon filter absorbs food odors, (2) Ethylene gas sensor detects spoiling food, (3) Barcode scanner tracks expiration dates, (4) Bluetooth chip sends alerts to phone and auto-releases mist cleanser when bad smells are detected.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/HowItWorks.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-3"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-product-features-showcase-section-highlighting-all-5-device-features-active-carbon-filter-ethylene-gas-sensor-barcode-scanner-for-expiration-dates-bluetooth-notifications-and-auto-mist-cleanser-use-emoji-icons-and-card-style-layout",
-      "featureTitle": "Add a product features showcase section highlighting all 5 device features: Active carbon filter, Ethylene gas sensor, Barcode scanner for expiration dates, Bluetooth notifications, and Auto-mist cleanser. Use emoji icons and card-style layout.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/FeaturesShowcase.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-4"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-target-market-section-describing-health-conscious-families-and-busy-professionals-ages-25-50-households-spending-150-month-on-groceries-include-the-unique-value-proposition-only-device-that-combines-odor-absorption-gas-detection-expiration-tracking-auto-mist-cleanse-in-one-unit",
-      "featureTitle": "Add a target market section describing: health-conscious families and busy professionals, ages 25–50, households spending $150+/month on groceries. Include the unique value proposition: 'Only device that COMBINES odor absorption + gas detection + expiration tracking + auto-mist cleanse in one unit.'",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/TargetMarket.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-shark-tank-themed-financials-section-with-dramatic-investor-card-styling-display-asking-500-000-for-15-equity-company-valuation-3-3-million-cogs-18-unit-retail-price-79-99-unit-markup-344-app-free-with-premium-subscription-4-99-month-monthly-expenses-breakdown-factory-warehouse-8-000-utilities-1-200-advertising-marketing-5-000-employee-salaries-5-employees-25-000-total-39-200-month-current-sales-180-000-first-6-months-projections-1-2m-year-1-4-5m-year-2-projected-annual-profit-420-000-year-1",
-      "featureTitle": "Add a Shark Tank-themed financials section with dramatic, investor-card styling. Display: Asking $500,000 for 15% equity, Company Valuation $3.3 Million, COGS $18/unit, Retail Price $79.99/unit, Markup 344%, App free with Premium subscription $4.99/month. Monthly expenses breakdown: Factory/Warehouse $8,000, Utilities $1,200, Advertising/Marketing $5,000, Employee Salaries (5 employees) $25,000, Total $39,200/month. Current Sales $180,000 (first 6 months). Projections: $1.2M Year 1, $4.5M Year 2, Projected Annual Profit $420,000 Year 1.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/SharkTankFinancials.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-an-interactive-app-demo-section-showing-a-mock-phone-screen-ui-with-a-food-inventory-list-with-items-color-coded-by-expiration-status-green-fresh-yellow-expiring-soon-red-expired-a-sample-alerts-panel-with-3-day-and-1-day-warnings-and-recipe-suggestions-for-expiring-food-items-the-phone-mockup-should-be-embedded-within-the-pitch-page",
-      "featureTitle": "Add an interactive app demo section showing a mock phone screen UI with: a food inventory list with items color-coded by expiration status (green = fresh, yellow = expiring soon, red = expired), a sample alerts panel with 3-day and 1-day warnings, and recipe suggestions for expiring food items. The phone mockup should be embedded within the pitch page.",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AppDemo.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-smooth-scroll-animations-and-transitions-throughout-the-page-sections-should-animate-in-as-the-user-scrolls-feature-cards-should-have-hover-effects-and-the-shark-tank-financials-section-should-have-a-dramatic-entrance-animation-ensure-the-layout-is-fully-responsive-across-desktop-and-mobile-screen-sizes",
-      "featureTitle": "Apply smooth scroll animations and transitions throughout the page: sections should animate in as the user scrolls, feature cards should have hover effects, and the Shark Tank financials section should have a dramatic entrance animation. Ensure the layout is fully responsive across desktop and mobile screen sizes.",
-      "files": [
-        "frontend/src/components/AppDemo.tsx",
-        "frontend/src/components/CompanyInfo.tsx",
-        "frontend/src/components/FeaturesShowcase.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/HowItWorks.tsx",
-        "frontend/src/components/SharkTankFinancials.tsx",
-        "frontend/src/components/TargetMarket.tsx",
-        "frontend/src/hooks/useScrollAnimation.ts",
-        "frontend/src/index.css"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-cohesive-visual-theme-throughout-primary-greens-2ecc71-and-27ae60-clean-white-backgrounds-dark-charcoal-accents-modern-sans-serif-typography-generous-whitespace-and-emoji-icons-used-consistently-for-visual-appeal-across-all-sections-the-overall-aesthetic-should-feel-professional-startup-ready-and-investor-facing",
-      "featureTitle": "Apply a cohesive visual theme throughout: primary greens #2ECC71 and #27AE60, clean white backgrounds, dark charcoal accents, modern sans-serif typography, generous whitespace, and emoji icons used consistently for visual appeal across all sections. The overall aesthetic should feel professional, startup-ready, and investor-facing.",
-      "files": [
-        "frontend/src/components/AppDemo.tsx",
-        "frontend/src/components/CompanyInfo.tsx",
-        "frontend/src/components/FeaturesShowcase.tsx",
-        "frontend/src/components/Hero.tsx",
-        "frontend/src/components/HowItWorks.tsx",
-        "frontend/src/components/SharkTankFinancials.tsx",
-        "frontend/src/components/TargetMarket.tsx",
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
       ],
       "confidence": "high"
     }

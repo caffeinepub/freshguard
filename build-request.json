@@ -1,224 +1,63 @@
 {
   "kind": "build_request",
-  "title": "FreshGuard Shark Tank Pitch & App Demo",
-  "projectName": "FreshGuard Pitch",
+  "title": "Add partners section and openable sidebar navigation",
+  "projectName": "FreshGuard",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Create a hero section at the top of the landing page featuring the FreshGuard logo (leaf + fridge icon design), the slogan 'Stay Fresh. Stay Smart. Waste Nothing.', and a call-to-action button. Use the green color scheme (#2ECC71, #27AE60) with clean whites and dark accents.",
+      "text": "Add a 'Partners' section on the home page (landing page) that displays FreshGuard's partnerships with Frigidaire, Whirlpool, and KitchenAid. Show each brand name prominently (and logo placeholder if available), styled consistently with the existing FreshGuard brand design. Place this section between existing home page sections in a logical position (e.g., after the Hero or Features section).",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-recent"
         ],
         "quotes": [
-          "Hero section with FreshGuard logo (leaf + fridge icon design, green color scheme)",
-          "Slogan: 'Stay Fresh. Stay Smart. Waste Nothing.'"
+          "add onto the first page that we are partners with Frigidaire, Whirlpool and KitchenAid"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section is prominently displayed at the top of the page",
-        "FreshGuard logo incorporates a leaf and fridge icon motif",
-        "Slogan text is clearly visible",
-        "Color scheme uses #2ECC71 and #27AE60 greens with white and dark accents"
+        "A 'Partners' or 'Our Partners' section is visible on the home/landing page",
+        "Frigidaire, Whirlpool, and KitchenAid are each displayed as partner brands",
+        "The section matches the FreshGuard visual theme and does not appear out of place",
+        "Section is responsive and looks correct on mobile and desktop"
       ]
     },
     {
       "id": "REQ-2",
-      "text": "Add a company info and mission section displaying: Company name 'FreshGuard Inc.', mission statement 'To eliminate food waste and promote healthier, smarter kitchens through innovative technology that keeps food fresh longer and keeps families informed.', and team members: CEO Jordan Ellis (Product Vision & Strategy), CTO Maya Chen (Hardware & Software Engineering), COO Marcus Webb (Operations & Manufacturing).",
+      "text": "Implement an openable/closeable sidebar navigation drawer that slides in from the left (or right) when triggered by a hamburger/menu button. The sidebar must list navigation links to every page and section: Business Plan, How It Works, Financials, The Pitch, and Sharks Vote — matching the screenshot provided. Clicking a link should navigate to or scroll to the corresponding page/section and close the sidebar. The trigger button must be persistently visible on all pages.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-recent"
         ],
         "quotes": [
-          "Company info, mission statement",
-          "CEO: Jordan Ellis",
-          "CTO: Maya Chen",
-          "COO: Marcus Webb"
+          "make something like this screenshot where viewers of the website can open sidebar where they will be able to access every page easier"
         ]
       },
       "acceptanceCriteria": [
-        "Mission statement is displayed verbatim",
-        "All three team members are listed with their titles and roles",
-        "Section is visually distinct and professional"
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "text": "Add a 'How It Works' section with 4 steps illustrated by emoji icons, covering: (1) Active carbon filter absorbs food odors, (2) Ethylene gas sensor detects spoiling food, (3) Barcode scanner tracks expiration dates, (4) Bluetooth chip sends alerts to phone and auto-releases mist cleanser when bad smells are detected.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "How it works section (4 steps with icons)",
-          "Active carbon filter",
-          "Ethylene gas sensor",
-          "Barcode scanner",
-          "Bluetooth chip"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Exactly 4 steps are shown in sequence",
-        "Each step has a distinct emoji icon",
-        "Steps clearly describe the device features",
-        "Layout is visually clean and scannable"
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "text": "Add a product features showcase section highlighting all 5 device features: Active carbon filter, Ethylene gas sensor, Barcode scanner for expiration dates, Bluetooth notifications, and Auto-mist cleanser. Use emoji icons and card-style layout.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Product features showcase",
-          "Active carbon filter that absorbs food odors naturally",
-          "Ethylene gas sensor",
-          "Barcode scanner",
-          "Bluetooth chip",
-          "Auto-releases a mist cleanser"
-        ]
-      },
-      "acceptanceCriteria": [
-        "All 5 device features are displayed",
-        "Each feature has an emoji icon and short description",
-        "Layout uses cards or a grid"
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "text": "Add a target market section describing: health-conscious families and busy professionals, ages 25–50, households spending $150+/month on groceries. Include the unique value proposition: 'Only device that COMBINES odor absorption + gas detection + expiration tracking + auto-mist cleanse in one unit.'",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Target market section",
-          "Health-conscious families, busy professionals, ages 25-50",
-          "Only device that COMBINES odor absorption + gas detection + expiration tracking + auto-mist cleanse in one unit"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Target market demographics are clearly stated",
-        "Unique value proposition is prominently highlighted",
-        "Section is visually differentiated from adjacent sections"
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "text": "Add a Shark Tank-themed financials section with dramatic, investor-card styling. Display: Asking $500,000 for 15% equity, Company Valuation $3.3 Million, COGS $18/unit, Retail Price $79.99/unit, Markup 344%, App free with Premium subscription $4.99/month. Monthly expenses breakdown: Factory/Warehouse $8,000, Utilities $1,200, Advertising/Marketing $5,000, Employee Salaries (5 employees) $25,000, Total $39,200/month. Current Sales $180,000 (first 6 months). Projections: $1.2M Year 1, $4.5M Year 2, Projected Annual Profit $420,000 Year 1.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Shark Tank themed section with dramatic styling for the financial ask",
-          "Asking: $500,000 for 15% equity",
-          "Company Valuation: $3.3 Million",
-          "Cost to Manufacture (COGS): $18 per unit",
-          "Retail Price: $79.99 per unit",
-          "Markup: 344%"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The investment ask ($500K for 15%) is prominently displayed in a dramatic hero-style card",
-        "All expense line items are listed with correct amounts",
-        "Revenue projections for Year 1 and Year 2 are shown",
-        "Section uses a visually dramatic style distinct from other sections (e.g., dark background, spotlight effect)"
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "text": "Add an interactive app demo section showing a mock phone screen UI with: a food inventory list with items color-coded by expiration status (green = fresh, yellow = expiring soon, red = expired), a sample alerts panel with 3-day and 1-day warnings, and recipe suggestions for expiring food items. The phone mockup should be embedded within the pitch page.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Show a mock phone screen with the FreshGuard app UI",
-          "Food inventory list with expiration dates and status indicators (green/yellow/red)",
-          "Sample alerts panel",
-          "Recipe suggestions for expiring food"
-        ]
-      },
-      "acceptanceCriteria": [
-        "A phone frame mockup is rendered on the page",
-        "Food inventory shows at least 5 sample items with color-coded expiration status",
-        "Alerts panel shows example 3-day and 1-day warnings",
-        "Recipe suggestions section shows at least 2 sample recipes tied to expiring items",
-        "The demo UI looks like a real mobile app screen"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "Apply smooth scroll animations and transitions throughout the page: sections should animate in as the user scrolls, feature cards should have hover effects, and the Shark Tank financials section should have a dramatic entrance animation. Ensure the layout is fully responsive across desktop and mobile screen sizes.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Smooth animations/transitions",
-          "Responsive design"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Sections animate into view on scroll",
-        "Cards have hover state transitions",
-        "Page is usable and well-laid-out on mobile viewports",
-        "No layout overflow or broken elements on small screens"
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "Apply a cohesive visual theme throughout: primary greens #2ECC71 and #27AE60, clean white backgrounds, dark charcoal accents, modern sans-serif typography, generous whitespace, and emoji icons used consistently for visual appeal across all sections. The overall aesthetic should feel professional, startup-ready, and investor-facing.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-1"
-        ],
-        "quotes": [
-          "Color scheme: Fresh greens (#2ECC71, #27AE60), clean whites, with dark accents",
-          "Modern, clean design that looks professional and investor-ready",
-          "Use emoji icons throughout for visual appeal"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Color palette is consistently applied across all sections",
-        "Typography is uniform and professional",
-        "Emoji icons appear in headings and feature cards throughout",
-        "Overall design feels cohesive and polished"
+        "A menu/hamburger button is always visible on the page regardless of which section is active",
+        "Clicking the button opens a sidebar drawer with navigation links",
+        "Sidebar contains links: Business Plan, How It Works, Financials, The Pitch, Sharks Vote",
+        "Clicking any sidebar link navigates to or scrolls to the corresponding section/page",
+        "Clicking a link or an outside area closes the sidebar",
+        "Sidebar is styled consistently with the FreshGuard brand and matches the clean, minimal style shown in the screenshot",
+        "Sidebar works correctly on both mobile and desktop screen sizes"
       ]
     }
   ],
   "constraints": [
-    "All content and UI must be frontend-only — no backend data persistence is required for the pitch/demo",
-    "Use only the specified green color scheme (#2ECC71, #27AE60) with white and dark accents",
-    "All financial figures, team names, and business details must match exactly as specified in the requirements"
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/",
+    "Do not alter the existing page routing logic in App.tsx beyond what is needed to support sidebar navigation",
+    "Sidebar navigation items must match exactly: Business Plan, How It Works, Financials, The Pitch, Sharks Vote"
   ],
   "nonGoals": [
-    "Real barcode scanning functionality",
-    "Actual Bluetooth or IoT device integration",
-    "Real push notification system",
-    "User authentication or accounts",
-    "Backend data storage for food inventory",
-    "Real recipe API integration"
+    "Adding official partner brand logos or assets (text names are sufficient)",
+    "Backend changes — no data persistence required for partners or sidebar state",
+    "Adding new pages beyond those already existing"
   ],
   "imageRequirements": {
-    "required": [
-      "FreshGuard logo combining a green leaf and a minimalist fridge silhouette on a white background, modern flat design style (freshguard-logo.dim_400x200.png)",
-      "Hero background with soft green gradient and subtle geometric pattern of leaves and droplets, fresh and clean aesthetic (hero-bg.dim_1920x1080.png)",
-      "FreshGuard smart fridge filter device product illustration, sleek white cylindrical device with green LED accents and sensor ports, on a white background (product-device.dim_600x600.png)"
-    ],
+    "required": [],
     "edits": []
   }
 }

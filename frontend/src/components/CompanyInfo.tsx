@@ -2,7 +2,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const team = [
   {
-    name: 'Jordan Ellis',
+    name: 'Dash Stewart',
     title: 'CEO',
     role: 'Product Vision & Strategy',
     emoji: '🎯',
@@ -10,7 +10,7 @@ const team = [
     badge: 'bg-brand text-white',
   },
   {
-    name: 'Maya Chen',
+    name: 'Rory McCarthy',
     title: 'CTO',
     role: 'Hardware & Software Engineering',
     emoji: '⚙️',
@@ -18,7 +18,7 @@ const team = [
     badge: 'bg-brand-dark text-white',
   },
   {
-    name: 'Marcus Webb',
+    name: 'Sean Sullivan',
     title: 'COO',
     role: 'Operations & Manufacturing',
     emoji: '🏭',
@@ -60,7 +60,7 @@ export default function CompanyInfo() {
         {/* Team */}
         <div>
           <h3 className="text-2xl font-bold text-charcoal text-center mb-10">
-            👥 Meet the Team
+            👥 Meet the Founders
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {team.map((member, i) => (
